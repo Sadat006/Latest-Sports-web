@@ -23,16 +23,29 @@
       .font-manrope {
         font-family: "Manrope", sans-serif;
       }
+      .max_screen_width {
+        max-width: 1150px;
+        padding-inline: 20px;
+        margin-inline: auto;
+      }
+      :root {
+        --color-primary: #ff4240;
+        --color-secondary: #131318;
+      }
     </style>
   </head>
-  <body>
+  <body class="font-manrope">
     <!-- header section starts -->
-    <header>
-      <nav>
-        <div class="navbar bg-base-100">
+    <header class="header max_screen_width">
+      <header class="max_screen_width mb-15 pt-2 sm:pt-4">
+        <nav class="navbar p-0 mb-4">
           <div class="navbar-start">
             <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost lg:hidden pl-0 hover:bg-transparent"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5"
@@ -52,26 +65,78 @@
                 tabindex="0"
                 class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Menu </a></li>
-                <li><a>Contact</a></li>
+                <li><a class="font-bold">Home</a></li>
+                <li><a class="hover:text-[var(--color-primary)]">About</a></li>
+                <li><a class="hover:text-[var(--color-primary)]">Pages</a></li>
+                <li><a class="hover:text-[var(--color-primary)]">Blog</a></li>
+                <li><a class="hover:text-[var(--color-primary)]">Contact</a></li>
+                <li>
+                  <a>
+                    <img
+                      src="assets/icons/search.svg"
+                      alt="Search Icon"
+                      class="w-5"
+                    />
+                    Search
+                  </a>
+                </li>
               </ul>
             </div>
-            <a class="btn btn-ghost text-xl">daisyUI</a>
+            <a class="text-xl sm:text-4xl font-extrabold"
+              >Hockey<span class="text-[var(--color-primary)]">’</span>s</a
+            >
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-              <li><a>Item 1</a></li>
-              <li><a>Parent</a></li>
-              <li><a>Item 3</a></li>
+              <li><a class="text-[var(--color-primary)] font-bold">Home</a></li>
+              <li><a class="hover:text-[var(--color-primary)]">About</a></li>
+              <li><a class="hover:text-[var(--color-primary)]">Pages</a></li>
+              <li><a class="hover:text-[var(--color-primary)]">Blog</a></li>
+              <li><a class="hover:text-[var(--color-primary)]">Contact</a></li>
             </ul>
           </div>
           <div class="navbar-end">
-            <a class="btn">Button</a>
+            <button class="btn btn-ghost hidden lg:inline mr-2">
+              <img src="assets/icons/search.svg" alt="Search Icon" class="w-6" />
+            </button>
+            <a
+              class="btn bg-[var(--color-primary)] text-white text-lg sm:text-xl font-bold hover:text-black"
+              >Get Ticket</a
+            >
           </div>
-        </div>
-      </nav>
+        </nav>
+        <!-- banner section starts -->
+        <section class="banner">
+          <div class="carousel w-full">
+            <!-- slide image 1 -->
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="assets/images/banner.png" class="w-full" />
+              <div class="absolute bottom-2 left-2">
+                <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a> 
+                <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+              </div>
+              <div>
+              
+            </div>
+            </div> 
+            <!-- slide-image 2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="assets/images/banner.png" class="w-full" />
+              <div class="absolute bottom-2 left-2">
+                <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a> 
+                <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
+              </div>
+            </div> 
+            <!-- slide image 3 -->
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="assets/images/banner.png" class="w-full" />
+              <div class="absolute bottom-2 left-2">
+                <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a> 
+                <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+              </div>
+            </div> 
+          </div>
+        </section>
     </header>
     <!-- main section starts -->
     <main></main>
