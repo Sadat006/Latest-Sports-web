@@ -32,6 +32,29 @@
         --color-primary: #ff4240;
         --color-secondary: #131318;
       }
+      .section-header {
+        width: 100%;
+        padding-block: 28px;
+        border-block: 1px dashed #13131833;
+        margin-bottom: 40px;
+      }
+
+      .section-title {
+        font-size: 2rem;
+        color: #131318;
+        text-align: center;
+        font-weight: 800;
+        margin-bottom: 10px;
+      }
+
+      .section-description {
+        font-size: 1rem;
+        color: #13131899;
+        margin-inline: auto;
+        text-align: center;
+        margin-bottom: 10px;
+        max-width: 640px;
+      }
     </style>
   </head>
   <body class="font-manrope">
@@ -42,6 +65,7 @@
         <div class="navbar-start">
           <div class="dropdown">
             <div
+              title="navbar"
               tabindex="0"
               role="button"
               class="btn btn-ghost lg:hidden pl-0 hover:bg-transparent"
@@ -133,26 +157,119 @@
               <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
             </div>
           </div>
-
-          <!-- the ghappa text section -->
-          <div
-            class="absolute right-8 bottom-8 text_contents bg-black text-[#FFF] max-w-lg rounded-2xl"
-          >
-            <div class="p-8">
-              <h3 class="font-extrabold mb-4">
-                Meet all the heroes from the field
-              </h3>
-              <p class="text-base font-medium">
-                Embark on a journey to meet all the from various fields who have
-                made left on their respective domains.
-              </p>
-            </div>
+        </div>
+        <!-- the text section -->
+        <div
+          class="flex mt-4 lg:absolute right-8 bottom-8 text_contents bg-black text-[#FFF] max-w-lg rounded-2xl"
+        >
+          <div class="p-8 lg:p-8">
+            <h3 class="font-extrabold mb-4 sm:text-2xl mb-2">
+              Meet all the heroes from the field
+            </h3>
+            <p class="text-base lg:font-medium">
+              Embark on a journey to meet all the from various fields who have
+              made left on their respective domains.
+            </p>
           </div>
         </div>
       </section>
     </header>
     <!-- main section starts -->
-    <main></main>
+    <main class="max_screen_width mb-15 pt-2 sm:pt-4">
+      <section class="mt-7">
+        <div class="section-header">
+          <h1 class="section-title">Professional Hockeys Club</h1>
+          <p class="section-description">
+            Through their tales, we unveil a collective narrative that showcases
+            the power of determination, passion, and the impact one can have in
+            the world.".
+          </p>
+        </div>
+
+        <!-- Progress Bars -->
+        <!-- first one -->
+        <div
+          class="grid justify-around gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"
+        >
+          <div class="text-center">
+            <div
+              class="radial-progress text-[#FF4240] mb-4"
+              style="--value: 85"
+              role="progressbar"
+            >
+              <span class="font-extrabold text-black">85%</span>
+            </div>
+            <h4
+              class="text-xl font-semibold text-[var(--color-secondary)] mb-2"
+            >
+              Prayer Facility
+            </h4>
+            <p class="text-[#13131899]">
+              Sacred space for reflection, meditation, and spiritual connection
+              in tranquility.
+            </p>
+          </div>
+
+          <!-- 2nd one -->
+
+          <div class="text-center">
+            <div
+              class="radial-progress text-[#49D293] mb-4"
+              style="--value: 80"
+              role="progressbar"
+            >
+              <span class="font-extrabold text-black">80%</span>
+            </div>
+            <h4
+              class="text-xl font-semibold text-[var(--color-secondary)] mb-2"
+            >
+              Training Ground
+            </h4>
+            <p class="text-[#13131899]">
+              Exeptional training ground for better experience
+            </p>
+          </div>
+
+          <!-- third one -->
+          <div class="text-center">
+            <div
+              class="radial-progress text-orange-300 mb-4"
+              style="--value: 90"
+              role="progressbar"
+            >
+              <span class="font-extrabold text-black">90%</span>
+            </div>
+            <h4
+              class="text-xl font-semibold text-[var(--color-secondary)] mb-2"
+            >
+              Senior Player
+            </h4>
+            <p class="text-[#13131899]">
+              Seniors are the also key for better result
+            </p>
+          </div>
+
+          <!-- fourth one -->
+          <div class="text-center">
+            <div
+              class="radial-progress text-[#4C8DF1] mb-4"
+              style="--value: 92"
+              role="progressbar"
+            >
+              <span class="font-extrabold text-black">92%</span>
+            </div>
+            <h4
+              class="text-xl font-semibold text-[var(--color-secondary)] mb-2"
+            >
+              Experienced Coach
+            </h4>
+            <p class="text-[#13131899]">
+              Coaches are the main miselium for better result
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- footer section starts -->
     <footer></footer>
   </body>
