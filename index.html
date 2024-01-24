@@ -36,112 +36,119 @@
   </head>
   <body class="font-manrope">
     <!-- header section starts -->
-    <header class="header max_screen_width">
-      <header class="max_screen_width mb-15 pt-2 sm:pt-4">
-        <nav class="navbar p-0 mb-4">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <div
-                tabindex="0"
-                role="button"
-                class="btn btn-ghost lg:hidden pl-0 hover:bg-transparent"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-              >
-                <li><a class="font-bold">Home</a></li>
-                <li><a class="hover:text-[var(--color-primary)]">About</a></li>
-                <li><a class="hover:text-[var(--color-primary)]">Pages</a></li>
-                <li><a class="hover:text-[var(--color-primary)]">Blog</a></li>
-                <li><a class="hover:text-[var(--color-primary)]">Contact</a></li>
-                <li>
-                  <a>
-                    <img
-                      src="assets/icons/search.svg"
-                      alt="Search Icon"
-                      class="w-5"
-                    />
-                    Search
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <a class="text-xl sm:text-4xl font-extrabold"
-              >Hockey<span class="text-[var(--color-primary)]">’</span>s</a
+    <header class="max_screen_width mb-15 pt-2 sm:pt-4">
+      <nav class="navbar p-0 mb-4">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost lg:hidden pl-0 hover:bg-transparent"
             >
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li><a class="text-[var(--color-primary)] font-bold">Home</a></li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a class="font-bold">Home</a></li>
               <li><a class="hover:text-[var(--color-primary)]">About</a></li>
               <li><a class="hover:text-[var(--color-primary)]">Pages</a></li>
               <li><a class="hover:text-[var(--color-primary)]">Blog</a></li>
               <li><a class="hover:text-[var(--color-primary)]">Contact</a></li>
+              <li>
+                <a>
+                  <img
+                    src="assets/icons/search.svg"
+                    alt="Search Icon"
+                    class="w-5"
+                  />
+                  Search
+                </a>
+              </li>
             </ul>
           </div>
-          <div class="navbar-end">
-            <button class="btn btn-ghost hidden lg:inline mr-2">
-              <img src="assets/icons/search.svg" alt="Search Icon" class="w-6" />
-            </button>
-            <a
-              class="btn bg-[var(--color-primary)] text-white text-lg sm:text-xl font-bold hover:text-black"
-              >Get Ticket</a
-            >
-          </div>
-        </nav>
-        <!-- banner section starts -->
-        <section class="banner">
-          <div class="carousel w-full">
-            <!-- slide image 1 -->
-            <div id="slide1" class="carousel-item relative w-full">
-              <img src="assets/images/banner.png" class="w-full" />
-              <div class="absolute bottom-2 left-2">
-                <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a> 
-                <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
-              </div>
-              <div>
-              
+          <a class="text-xl sm:text-4xl font-extrabold"
+            >Hockey<span class="text-[var(--color-primary)]">’</span>s</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-[var(--color-primary)] font-bold">Home</a></li>
+            <li><a class="hover:text-[var(--color-primary)]">About</a></li>
+            <li><a class="hover:text-[var(--color-primary)]">Pages</a></li>
+            <li><a class="hover:text-[var(--color-primary)]">Blog</a></li>
+            <li><a class="hover:text-[var(--color-primary)]">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button class="btn btn-ghost hidden lg:inline mr-2">
+            <img src="assets/icons/search.svg" alt="Search Icon" class="w-6" />
+          </button>
+          <a
+            class="btn bg-[var(--color-primary)] text-white text-lg sm:text-xl font-bold hover:text-black"
+            >Get Ticket</a
+          >
+        </div>
+      </nav>
+      <!-- banner section starts -->
+      <section class="relative">
+        <div class="carousel w-full">
+          <!-- slide image 1 -->
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="assets/images/banner.png" alt="image" class="w-full" />
+            <div class="absolute bottom-2 left-24 lg:bottom-2 left-2">
+              <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a>
+              <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
             </div>
-            </div> 
-            <!-- slide-image 2 -->
-            <div id="slide2" class="carousel-item relative w-full">
-              <img src="assets/images/banner.png" class="w-full" />
-              <div class="absolute bottom-2 left-2">
-                <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a> 
-                <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
-              </div>
-            </div> 
-            <!-- slide image 3 -->
-            <div id="slide3" class="carousel-item relative w-full">
-              <img src="assets/images/banner.png" class="w-full" />
-              <div class="absolute bottom-2 left-2">
-                <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a> 
-                <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
-              </div>
-            </div> 
+            <div></div>
           </div>
-          
-          <!-- <div class="text_contents bg-black text-white">
-            <h3>Meet all the heroes from the field</h3>
-            <p>Embark on a journey to meet all the unsung heroes from various fields who have made significant contributions and left an indelible mark on their respective domains. Whether it's the innovators pushing technological boundaries.</p>
-          </div> -->
-        </section>
+          <!-- slide-image 2 -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="assets/images/banner.png" alt="image" class="w-full" />
+            <div class="absolute bottom-2 left-24 lg:bottom-2 left-2">
+              <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a>
+              <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
+            </div>
+          </div>
+          <!-- slide image 3 -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="assets/images/banner.png " alt="image" class="w-full" />
+            <div class="absolute bottom-2 left-24 lg:bottom-2 left-2">
+              <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a>
+              <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+            </div>
+          </div>
+
+          <!-- the ghappa text section -->
+          <div
+            class="absolute text_contents bg-black text-[#FFF] max-w-md rounded-2xl"
+          >
+            <div class="p-8">
+              <h3 class="font-extrabold mb-4">
+                Meet all the heroes from the field
+              </h3>
+              <p class="text-base font-medium">
+                Embark on a journey to meet all the from various fields who have
+                made left on their respective domains.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
     <!-- main section starts -->
     <main></main>
